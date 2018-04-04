@@ -1,28 +1,89 @@
+#root {
+  height: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
 .App {
+  border: 3px solid #fff;
+  border-radius: 1px;
+}
+
+.grid {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.row {
+  width: auto;
+  flex-direction: row;
+  display: flex;
+  border-bottom: 6px solid #96B7E7;
+}
+.cell {
+  border-right: 6px solid #96B7E7;
+  padding: 5px;
+  width: 5rem;
+  height: 5rem;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 2em;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+.cell--set {
+  color: #96B7E7;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.cell:first-child {
+  border-top: 0;
+  border-left: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.cell:last-child {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.row:first-child {
+  border-top: 0;
+}
+
+.row:last-child {
+  border-bottom: 0;
+}
+
+.text-white {
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.WinGame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 4rem;
 }

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+.TieGame {
+  font-family: 'Orbitron', sans-serif;
+  color: #96B7E7;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+
+.TieGame p {
+  margin: 1.5rem;
+  padding: 0;
+  line-height: 2rem;
+  font-size: 2rem;
+  text-shadow: 0 0 2px #73decf;
+}
+
+.TieGame p:first-child {
+  margin-top: 0;
+}
+
+.TieGame p:last-child {
+  margin-bottom: 0;
+}
