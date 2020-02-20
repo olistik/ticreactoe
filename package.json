@@ -1,7 +1,7 @@
 {
   "name": "ticreactoe",
   "version": "0.1.0",
-  "homepage": "https://olistik.github.io/ticreactoe",
+  "homepage": "https://ticreactoe.netlify.com",
   "private": true,
   "dependencies": {
     "immutable": "^4.0.0-rc.12",
